@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(pokedex.css);
+@import url(MediaQuerrys.Css);
+
+*{
+    font-family: 'Roboto', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background: linear-gradient(180deg, #F2F2F2, #dcdbdb);
+}
+
+.content h1 {
+    margin: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+
