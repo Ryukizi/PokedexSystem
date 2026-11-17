@@ -60,6 +60,7 @@
     list-style: none;
     padding: 0;
     margin:0;
+
 }
 
 .pokemon{
@@ -68,6 +69,7 @@
     margin:0.5rem;
     padding: 2rem 1rem;
     border-radius: 1rem;
+    z-index: 1;
 
 }
 

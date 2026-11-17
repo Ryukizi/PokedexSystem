@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(pokedex.css);
 @import url(MediaQuerrys.Css);
+@import url(details.css);
 
 *{
     font-family: 'Roboto', Times, serif;
@@ -8,25 +9,61 @@
 }
 
 body {
-    background-color: #fff;
+    background: linear-gradient(
+        to bottom,
+        #CBCACA 0%,
+        #8F8F8F 50%,
+        #555555 100%
+    );
 }
 
 .content {
+    position: relative;
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
-    padding: 1rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
     background: linear-gradient(180deg, #F2F2F2, #dcdbdb);
+}
+
+.content .logo {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+
+    height: auto;
+
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.28;
+    filter: brightness(2);
 }
 
 .content h1 {
     margin: 2rem;
+    padding: 0rem 0rem 1rem 0rem;
 }
 
-.logo {
-    display: flex;
-    justify-content: right;
-    margin-bottom: 1rem;
-    opacity: 0.5;
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.15;
 }
 
 
+.background .imgDots {
+    width: 600px;
+    height: auto;
+}
+
+.background .imgPokeball {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+}
